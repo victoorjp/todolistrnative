@@ -28,8 +28,8 @@ Este projeto é uma aplicação de lista de tarefas (To-do) feita em React Nativ
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
-cd seu-projeto
+git clone https://github.com/Matrodazz/todolistrnative.git
+cd todolistrnative
 ```
 2. Instale as dependências
 
