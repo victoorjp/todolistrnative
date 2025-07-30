@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+# Lista To Do - React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto é uma aplicação de lista de tarefas (To-do) feita em React Native.
 
-## Get started
+---
 
-1. Install dependencies
+## Pré-requisitos
 
-   ```bash
-   npm install
-   ```
+- Node.js (versão >= 18)
+- npm ou yarn
+- Expo CLI instalado globalmente (opcional, caso use Expo)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Funcionalidades implementadas
 
-In the output, you'll find options to open the app in a
+* Adicionar tarefas
+* Editar tarefas
+* Deletar tarefas
+* Feedback com mensagens toast
+* Componentes Input e Button reutilizáveis
+* Testes unitários da lógica de manipulação de itens
+  
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Como configurar o ambiente
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone o repositório
 
 ```bash
-npm run reset-project
+git clone https://github.com/seu-usuario/seu-projeto.git
+cd seu-projeto
+```
+2. Instale as dependências
+
+```bash
+npm install
+# ou
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Como executar o projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+### Com expo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm start
+# ou
+expo start
+```
+Após executar, escaneie o QR code com o app Expo Go no seu celular ou use um emulador.
 
-## Join the community
 
-Join our community of developers creating universal apps.
+### Com React Native CLI
+* Android:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+  ```bash
+  npx react-native run-android
+  ```
+
+* iOS:
+  
+  ```bash
+  npx react-native run-ios
+  ```
+---
+
+## Gerando o build
+### Com Expo
+* Android:
+  
+  ```bash
+  expo build:android
+  ```
+  
+* iOS:
+  
+  ```bash
+  expo build:ios
+  ```
+### Com React Native CLI
+Siga as instruções oficiais do React Native para [Android](https://reactnative.dev/docs/signed-apk-android) e [iOS](https://reactnative.dev/docs/running-on-device).
+
+---
+
+## Rodando os testes
+```bash
+npm test
+# ou
+yarn test
+```
+Os testes cobrem as funções de adicionar, editar e deletar itens da lista.
